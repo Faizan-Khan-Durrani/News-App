@@ -67,3 +67,57 @@ header {
   background-color: #14213d;
   transition: 1s ease all;
 }
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+slider-image-box {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+.slider-image-box img {
+  width: 100vw;
+  height: 600px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: 0;
+  background-color: #00000083;
+}
+.slider-content {
+  position: absolute;
+  translate: transform(-50%, -50%);
+  text-align: center;
+}
+.slider-content h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.slider-content p {
+  color: #fca311;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.slider-content a {
+  background-color: #fca311;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.slider-content a:hover {
+  background-color: #14213d;
+  transition: 1s ease all;
+}
