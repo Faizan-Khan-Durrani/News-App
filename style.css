@@ -155,7 +155,7 @@ slider-image-box {
 #news {
   overflow: hidden;
   display: flex;
-  gap: 110px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;

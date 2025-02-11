@@ -5,7 +5,6 @@ let filters = document.querySelectorAll("ul li button");
 let word = "virat kohli";
 search.addEventListener("click", (e) => {
   word = search.previousElementSibling.value;
-  console.log(word);
   news.innerHTML = ""; // Clear existing news before fetching new ones
   FetchNews();
 });
@@ -13,7 +12,6 @@ search.addEventListener("click", (e) => {
 filters.forEach((e) => {
   e.addEventListener("click", () => {
     word = e.textContent;
-    console.log(word);
     news.innerHTML = ""; // Clear existing news before fetching new ones
     FetchNews();
   });
@@ -26,6 +24,7 @@ async function FetchNews() {
     );
     const response = await fetched;
     const data = await response.json();
+    console.log(data);
     parseHTML(data);
   } catch (error) {
     console.error("Error fetching news:", error);
@@ -43,13 +42,16 @@ function parseHTML(data) {
           <img src="${data.articles[i].urlToImage}" alt="" />
         </div>
         <div class="details">
-          <h4 id="heading">${String(data.articles[i].title).slice(0, 30)}..</h4>
+          <h4 id="heading">${String(data.articles[i].title).slice(
+            0,
+            30
+          )}..</h4>
           <p id="desc">
         ${String(data.articles[i].description).slice(0, 90)}......
           </p>
           <button type="button"><a href="${
             data.articles[i].url
-          }">Read More</a></button>
+          }" target="_blank">Read More</a></button>
         </div>
       </div> `;
     news.appendChild(card);
