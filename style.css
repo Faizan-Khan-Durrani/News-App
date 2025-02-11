@@ -140,13 +140,17 @@ slider-image-box {
   margin: 0px 0px 40px 0px;
   color: #fca311;
 }
-.newsFilter ul li {
+.newsFilter ul li button {
   cursor: pointer;
   font-size: 20px;
-  transition: 1s all ease;
-}
-.newsFilter ul li:hover {
+  transition: 0.5s all ease;
+  background-color: transparent;
+  border: none;
   color: #14213d;
+  font-size: 25px;
+}
+.newsFilter ul li button:hover {
+  color: #fca311;
 }
 #news {
   overflow: hidden;
