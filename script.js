@@ -5,14 +5,14 @@ let filters = document.querySelectorAll("ul li button");
 let word = "virat kohli";
 search.addEventListener("click", (e) => {
   word = search.previousElementSibling.value;
-  news.innerHTML = ""; // Clear existing news before fetching new ones
+  news.innerHTML = ""; 
   FetchNews();
 });
 
 filters.forEach((e) => {
   e.addEventListener("click", () => {
     word = e.textContent;
-    news.innerHTML = ""; // Clear existing news before fetching new ones
+    news.innerHTML = ""; 
     FetchNews();
   });
 });
