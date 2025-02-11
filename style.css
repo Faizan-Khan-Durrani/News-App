@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", serif;
   background-color: #f2f2f2;
+  overflow-x: hidden;
 }
 header {
   background-color: #14213d;
@@ -79,11 +80,13 @@ slider-image-box {
   height: 10px;
   overflow: hidden;
   position: relative;
+  right: 0;
   margin-top: 100px;
 }
 .slider-image-box img {
   width: 100vw;
   height: 600px;
+  object-fit: cover;
 }
 .overlay {
   position: absolute;
@@ -116,8 +119,87 @@ slider-image-box {
   border-radius: 20px;
   text-decoration: none;
   margin-top: 20px;
+  border: 3px solid #14213d;
 }
 .slider-content a:hover {
   background-color: #14213d;
   transition: 1s ease all;
+  border: 3px solid #fca311;
+}
+.newsHeading h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #14213d;
+}
+.newsFilter ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0px 0px 40px 0px;
+  color: #fca311;
+}
+.newsFilter ul li {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 1s all ease;
+}
+.newsFilter ul li:hover {
+  color: #14213d;
+}
+#news {
+  overflow: hidden;
+  display: flex;
+  gap: 110px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 320px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card .details {
+  text-align: center;
+}
+.card .details h2,
+.card .details p {
+  margin: 10px;
+}
+.card .details p {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+.card button {
+  background-color: #fca311;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  border: 3px solid #14213d;
+  cursor: pointer;
+  font-size: 16px;
+}
+.card button a {
+  color: white;
+  text-decoration: none;
+}
+
+.card button:hover {
+  background-color: #14213d;
+  transition: 1s ease all;
+  border: 3px solid #fca311;
 }
