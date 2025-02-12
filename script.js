@@ -2,17 +2,17 @@ const news = document.getElementById("news");
 const search = document.getElementById("search");
 let filters = document.querySelectorAll("ul li button");
 
-let word = "virat kohli";
+let word = "Music";
 search.addEventListener("click", (e) => {
   word = search.previousElementSibling.value;
-  news.innerHTML = ""; 
+  news.innerHTML = "";
   FetchNews();
 });
 
 filters.forEach((e) => {
   e.addEventListener("click", () => {
     word = e.textContent;
-    news.innerHTML = ""; 
+    news.innerHTML = "";
     FetchNews();
   });
 });
@@ -42,10 +42,7 @@ function parseHTML(data) {
           <img src="${data.articles[i].urlToImage}" alt="" />
         </div>
         <div class="details">
-          <h4 id="heading">${String(data.articles[i].title).slice(
-            0,
-            30
-          )}..</h4>
+          <h4 id="heading">${String(data.articles[i].title).slice(0, 30)}..</h4>
           <p id="desc">
         ${String(data.articles[i].description).slice(0, 90)}......
           </p>
