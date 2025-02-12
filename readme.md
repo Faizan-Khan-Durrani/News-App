@@ -4,34 +4,34 @@ A simple and user-friendly News App that fetches and displays the latest news ar
 
 # 🚀 Features
 
-- ✅ Search Functionality – Search for news articles by keyword
-- ✅ Category Filters – Browse news by predefined categories (All, Technology, Politics, Sports, World)
-- ✅ Dynamic News Feed – Display articles with images, titles, descriptions, and links
-- ✅ Fully Responsive – Optimized for desktop, tablet, and mobile screens
-- ✅ Real-Time Updates – Fetch the latest news using News API
+- Search Functionality – Search for news articles by keyword
+- Category Filters – Browse news by predefined categories (All, Technology, Politics, Sports, World)
+- Dynamic News Feed – Display articles with images, titles, descriptions, and links
+- Fully Responsive – Optimized for desktop, tablet, and mobile screens
+- Real-Time Updates – Fetch the latest news using News API
 
 # 🛠️ Technologies Used
 
-- 🔹 HTML – Structure the web pages
-- 🔹 CSS – Style and design the app
-- 🔹 JavaScript – Handle API calls and dynamic content
-- 🔹 News API – Fetch real-time news articles
+- HTML – Structure the web pages
+- CSS – Style and design the app
+- JavaScript – Handle API calls and dynamic content
+- News API – Fetch real-time news articles
 
 # 📚 Usage
 
-- 1️⃣ Search for News – Type a keyword and press enter
-- 2️⃣ Browse Categories – Click on category buttons (Technology, Sports, etc.)
-- 3️⃣ Read More – Click on an article to open the full story on the original source
+- Search for News – Type a keyword and press enter
+- Browse Categories – Click on category buttons (Technology, Sports, etc.)
+- Read More – Click on an article to open the full story on the original source
 
 # 🤝 Contributing
 
 💡 Want to improve this project?
 
-- 1️⃣ Fork the repository
-- 2️⃣ Create a new branch (git checkout -b feature-name)
-- 3️⃣ Make your changes and commit (git commit -m "Added new feature")
-- 4️⃣ Push to your branch (git push origin feature-name)
-- 5️⃣ Submit a Pull Request 🚀
+- Fork the repository
+- Create a new branch (git checkout -b feature-name)
+- Make your changes and commit (git commit -m "Added new feature")
+- Push to your branch (git push origin feature-name)
+- Submit a Pull Request 🚀
 
 # 📜 License
 
@@ -39,11 +39,11 @@ A simple and user-friendly News App that fetches and displays the latest news ar
 
 # 🎯 Future Enhancements
 
-- 🔹 Dark Mode Support 🌙
-- 🔹 Pagination for More News 📄
-- 🔹 User Authentication (Save Favorites) 🔑
+-  Dark Mode Support 🌙
+-  Pagination for More News 📄
+-  User Authentication (Save Favorites) 🔑
 
 # 🙌 Acknowledgments
-- 
-- 🔹 Thanks to News API for providing real-time news data!
-- 🔹 Inspired by modern news platforms like Google News & BBC
+
+-  Thanks to News API for providing real-time news data!
+-  Inspired by modern news platforms like Google News & BBC
