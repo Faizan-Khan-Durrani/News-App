@@ -147,7 +147,26 @@ slider-image-box {
   background-color: transparent;
   border: none;
   color: #14213d;
+  position: relative;
   font-size: 25px;
+}
+.newsFilter ul li {
+  position: relative;
+}
+.newsFilter ul li ::before {
+  content: "";
+  margin-top: 10px;
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: #fca311;
+  bottom: -6px;
+  left: 0;
+  transition: 1s all ease;
+}
+
+.newsFilter ul li button:hover::before {
+  width: 100%;
 }
 .newsFilter ul li button:hover {
   color: #fca311;
