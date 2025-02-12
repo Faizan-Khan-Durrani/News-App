@@ -226,3 +226,64 @@ slider-image-box {
   transition: 1s ease all;
   border: 3px solid #fca311;
 }
+
+/* Footer Styling */
+.footer {
+  background-color: #14213d;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  color: #fca311;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fca311;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #0f1b2d;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+}
